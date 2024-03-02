@@ -1,0 +1,20 @@
+{
+    "name": "bunesk/php-helper",
+    "description": "A bunch of useful php helper classes.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Bunesk\\PhpHelper\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Bünyamin Eskiocak",
+            "email": "mail@bunesk.net"
+        }
+    ],
+    "require": {
+        "php": ">=7.1"
+    }
+}
