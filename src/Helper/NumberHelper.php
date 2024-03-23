@@ -72,6 +72,14 @@ class NumberHelper
      */
     public static function fibonacci(int $limit): array
     {
+        if ($limit < 1) {
+            throw new \InvalidArgumentException('Limit must be greater than 0.');
+        }
+
+        if ($limit === 1) {
+            return [0];
+        }
+
         $fibonacciNumbers = [0, 1];
 
         for ($i = 2; $i < $limit; $i++) {
